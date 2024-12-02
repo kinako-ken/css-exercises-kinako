@@ -11,11 +11,14 @@
     <p class="para">I'm just a paragraph with extra bold text!</p>
     <p class="para small-para">I'm a smaller paragraph, also with extra bold text!</p>
 
-    <button id="confirm-button" class="button confirm">Confirm</button>
+    <!-- Rule Order. no selector for id, last one defined is .button, hence it takes prioritizes .button -->
+    <button id="confirm-button" class="button confirm">Confirm</button>  
+
     <button id="cancel-button" class="button cancel">Cancel</button>
 
     <div class="text">I'm a div with thin text!</div>
     <div class="text">I'm a div with thin text and a child div!
+      <!-- Not directly targeting the element (only has .child as a selector), hence it inherits div.text selector -->
       <div class="text child">I'm a smaller child div with extra bold text.</div>
     </div>
   </body>
