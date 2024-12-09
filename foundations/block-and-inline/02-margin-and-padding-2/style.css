@@ -8,14 +8,14 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
-  padding: 8px 8px;
+  padding: 8px;
 }
 
 /* moved this selector at the top because it seems to be prioritized
 and not following what i put on .content, is this more specific or same level?
 since it followed .content now, maybe same level.*/
 .card > * {
-  padding: 8px 8px;
+  padding: 8px;
   margin: 8px 0px;
 }
 
@@ -39,14 +39,15 @@ since it followed .content now, maybe same level.*/
 .button-container {
   background: #e3f4ff;
   text-align: center;
+  margin-bottom: 0px;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
   display: block;
-  margin: auto;
-  padding: 10px;
+  margin: 0 auto;
+  padding: 8px 24px;
 }
 
 
