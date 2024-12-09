@@ -8,22 +8,47 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px 8px;
 }
+
+/* moved this selector at the top because it seems to be prioritized
+and not following what i put on .content, is this more specific or same level?
+since it followed .content now, maybe same level.*/
+.card > * {
+  padding: 8px 8px;
+  margin: 8px 0px;
+}
+
 /* Title pushes the whole parent div down because it has a margin
  of 21.440px(bigger than its parent) top & bottom, despite not being stated*/
-.title {
+
+ /* commit 2 = the title's original margin kept shrinking as i change values.
+ When I created a selector to change all child elements' top and bottom margin to 
+ 8px, it changed from its old one. Is the margin being added without me stating it
+ an example of normal flow? */
+ .title {
   background: #e3f4ff;
+  font-size: 16px;
 }
 
 .content {
   background: #e3f4ff;
+  padding: 16px 8px;
 }
 
 .button-container {
   background: #e3f4ff;
+  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  margin: auto;
+  padding: 10px;
 }
+
+
+
+
