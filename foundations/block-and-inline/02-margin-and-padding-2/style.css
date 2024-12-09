@@ -1,3 +1,4 @@
+/* body has a margin of 8px even if its not stated */
 body {
   background: #eee;
   font-family: sans-serif;
@@ -8,7 +9,8 @@ body {
   background: #fff;
   margin: 16px auto;
 }
-
+/* Title pushes the whole parent div down because it has a margin
+ of 21.440px(bigger than its parent) top & bottom, despite not being stated*/
 .title {
   background: #e3f4ff;
 }
